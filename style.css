@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  }
+
+a, p, h1 {
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+}
+
+
+div.firstblock {
+  font-size: 20px;
+  text-align: center;
+  background-color: #24292e;
+  height: 20px;
+  padding: 35px;
+}
+
+div.secondblock {
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+  height: 900px;
+}
+
+div.thirdblock {
+  display: inline-block;
+  block-align: left !important;
+  margin: 2%;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+  height: 100px;
+  width: 60%;
+}
+
+div.forthblock {
+  padding: 0.5%;
+  display: inline-block;
+  margin: 2%;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+  height: 850px;
+  width: 30%;
+  text-align: center;
+}
+
+img.mypicture {
+  border-radius: 10px;
+  text-align: center;
+  height: 50%;
+  width: 85%;
+  margin: 5%;
+
+}
+
+a.aeditprofile {
+  display: inline-block;
+  font-size: 25px;
+  width: 85%;
+  height: 40px;
+  background-color: #DF7F11;
+  border-radius: 20px;
+  padding-top: 10px;
+
+}
+
+a.avk {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 25px;
+  width: 85%;
+  height: 40px;
+  background-color: blue;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+a.afacebook {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 25px;
+  width: 85%;
+  height: 40px;
+  background-color: #20459B;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+a.ainstagram {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 25px;
+  width: 85%;
+  height: 40px;
+  background-color: #9B2082;
+  border-radius: 20px;
+  padding-top: 10px;
+}
