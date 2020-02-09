@@ -14,37 +14,41 @@
     </div>
     <div class="secondblock">
       <div class="thirdblock">
-        <div class="shortdescription">
-          <h3>Мельников Андрей</h3>
-          <p>Любитель природы. Создатель данной веб-страницы</p>
+        <div class="shortdescription" style="text-align: center;">
+          <h2 style="font-size:35px;">Привет, я Мельников Андрей!</h3>
+          <p>22 года. Любитель природы. Создатель данной веб-страницы</p>
           <hr>
         </div>
         <div class="firstpost">
           <h3>First post</h3>
-          <p>bla-blahbla-blahbla-blahbla-blahbla-blahbla <span id="dots">...</span><span id="more">-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blah bla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla</span></p>
+          <p>Сначала я думал, что сделать открывающиеся посты будет просто<span id="dots">...</span><span id="more"><br>Но затем понял, что ошибался.. <br> =( </span></p>
           <button id="btn" onclick="readMore()">Читать далее</button>
+        </div>
+        <div class="secondpost">
+          <h3>Second post</h3>
+          <p>В этом посте предлагаю вам со мной послушать немного хорошей музыки. Тыкайте читать далее<span id="dots2">...</span><span id="more2"> <br> <br>  <iframe style="margin-left: 20%;" width="560" height="315" src="https://www.youtube.com/embed/w1HlalksmZk?start=41" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </span></p>
+          <button id="btn2" onclick="readMore2()">Читать далее</button>
         </div>
       </div>
       <div class="forthblock">
-
-        <img class="mypicture" src="/home/andrew/senior_project/kisamict.github.io/mypicture.jpg
+        <img class="mypicture" src="/home/andrew/senior_project/kisamict.github.io/mypicture2.jpg
 " alt="">
         <a class="aeditprofile" href="#">Edit profile</a>
         <a class="avk" href="#">VK</a>
         <a class="afacebook" href="#">Facebook</a>
-        <a class="ainstagram" href="#">Instagram</a>
+        <a class="ainstagram" href="https://www.instagram.com/kiyasuka/">Instagram</a>
       </div>
     </div>
     <script type="text/javascript">
 
     function readMore() {
-      var dots = document.getElementById('dots');
-      var more = document.getElementById('more');
-      var btn = document.getElementById('btn');
+      let dots = document.getElementById('dots');
+      let more = document.getElementById('more');
+      let btn = document.getElementById('btn');
 
       if (dots.style.display === "none") {
         dots.style.display="inline";
-        btn.innerHTML="Подробнее";
+        btn.innerHTML="Читать далее";
         more.style.display="none";
       } else {
         dots.style.display="none";
@@ -53,6 +57,21 @@
       }
     }
 
+    function readMore2() {
+      let dots2 = document.getElementById('dots2');
+      let more2 = document.getElementById('more2');
+      let btn2 = document.getElementById('btn2');
+
+      if (dots2.style.display === "none") {
+        dots2.style.display="inline";
+        btn2.innerHTML="Читать далее";
+        more2.style.display="none";
+      } else {
+        dots2.style.display="none";
+        btn2.innerHTML="Скрыть";
+        more2.style.display="inline";
+      }
+    }
     </script>
   </body>
 </html>
