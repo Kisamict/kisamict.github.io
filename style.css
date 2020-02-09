@@ -3,7 +3,7 @@ body {
   background: url(mountaibg.jpg);
   background-position: 50% 50%;
   background-attachment:fixed;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: Superpuper;
   background-color: rgba(9, 20, 11, 1);
@@ -12,7 +12,7 @@ body {
 
   @font-face {
     font-family: Superpuper; /* Гарнитура шрифта */
-    src: url(/home/andrew/senior_project/kisamict.github.io/17661.otf); /* Путь к файлу со шрифтом */
+    src: url(17661.otf); /* Путь к файлу со шрифтом */
    }
 
 
