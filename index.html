@@ -14,6 +14,16 @@
     </div>
     <div class="secondblock">
       <div class="thirdblock">
+        <div class="shortdescription">
+          <h3>Мельников Андрей</h3>
+          <p>Любитель природы. Создатель данной веб-страницы</p>
+          <hr>
+        </div>
+        <div class="firstpost">
+          <h3>First post</h3>
+          <p>bla-blahbla-blahbla-blahbla-blahbla-blahbla <span id="dots">...</span><span id="more">-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blah bla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla-blahbla</span></p>
+          <button id="btn" onclick="readMore()">Читать далее</button>
+        </div>
       </div>
       <div class="forthblock">
 
@@ -25,5 +35,24 @@
         <a class="ainstagram" href="#">Instagram</a>
       </div>
     </div>
+    <script type="text/javascript">
+
+    function readMore() {
+      var dots = document.getElementById('dots');
+      var more = document.getElementById('more');
+      var btn = document.getElementById('btn');
+
+      if (dots.style.display === "none") {
+        dots.style.display="inline";
+        btn.innerHTML="Подробнее";
+        more.style.display="none";
+      } else {
+        dots.style.display="none";
+        btn.innerHTML="Скрыть";
+        more.style.display="inline";
+      }
+    }
+
+    </script>
   </body>
 </html>
