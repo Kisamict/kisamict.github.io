@@ -125,6 +125,9 @@ a.ainstagram {
 div.shortdescription, div.firstpost, div.secondpost {
   padding: 2%;
 }
+div#hiddendiv {
+  width: 80%;
+}
 
 #more, #more2 {
   display: none;

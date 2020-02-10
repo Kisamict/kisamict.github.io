@@ -21,7 +21,10 @@
         </div>
         <div class="firstpost">
           <h3>First post</h3>
-          <p>Сначала я думал, что сделать открывающиеся посты будет просто<span id="dots">...</span><span id="more"><br>Но затем понял, что ошибался.. <br> =( </span></p>
+          <p>Сначала я думал, что сделать открывающиеся посты будет просто...</p>
+          <div id="hiddendiv" style="display: none;">
+            <p>Но оказалось, что это совсем не так</p>
+          </div>
           <button id="btn" onclick="readMore()">Читать далее</button>
         </div>
         <div class="secondpost">
@@ -40,36 +43,14 @@
       </div>
     </div>
     <script type="text/javascript">
+    let btn = document.getElementById('btn');
+    let hiddendiv = document.getElementById('hiddendiv');
 
-    function readMore() {
-      let dots = document.getElementById('dots');
-      let more = document.getElementById('more');
-      let btn = document.getElementById('btn');
-
-      if (dots.style.display === "none") {
-        dots.style.display="inline";
-        btn.innerHTML="Читать далее";
-        more.style.display="none";
+    btn.onclick = function () {
+      if (hiddendiv.style.display === 'none') {
+        hiddendiv.style.display = 'inline-block';
       } else {
-        dots.style.display="none";
-        btn.innerHTML="Скрыть";
-        more.style.display="inline";
-      }
-    }
-
-    function readMore2() {
-      let dots2 = document.getElementById('dots2');
-      let more2 = document.getElementById('more2');
-      let btn2 = document.getElementById('btn2');
-
-      if (dots2.style.display === "none") {
-        dots2.style.display="inline";
-        btn2.innerHTML="Читать далее";
-        more2.style.display="none";
-      } else {
-        dots2.style.display="none";
-        btn2.innerHTML="Скрыть";
-        more2.style.display="inline";
+        hiddendiv.style.display = 'none';
       }
     }
     </script>
