@@ -25,34 +25,58 @@
           <div id="hiddendiv" style="display: none;">
             <p>Но оказалось, что это совсем не так</p>
           </div>
-          <button id="btn" onclick="readMore()">Читать далее</button>
+          <button class="btn" data-hiddendiv="hiddendiv" id="btn">Читать далее</button>
         </div>
         <div class="secondpost">
           <h3>Second post</h3>
-          <p>В этом посте предлагаю вам со мной послушать немного хорошей музыки. Тыкайте читать далее<span id="dots2">...</span><span id="more2"> <br> <br>  <iframe style="margin-left: 20%;" width="560" height="315" src="https://www.youtube.com/embed/w1HlalksmZk?start=41" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </span></p>
-          <button id="btn2" onclick="readMore2()">Читать далее</button>
+          <p>Тестовый пост номер два </p>
+          <div style="display: none;" id="hiddendiv2">
+            <p>Какой-то текст, какой-то текст</p>
+          </div>
+          <button class="btn" data-hiddendiv="hiddendiv2" id="btn2">Читать далее</button>
         </div>
       </div>
       <div class="forthblock">
-        <img class="mypicture" src="mypicture2.jpg
-" alt="">
+        <img class="mypicture" src="mypicture2.jpg" alt="">
         <a class="aeditprofile" href="#">Edit profile</a>
         <a class="avk" href="#">VK</a>
         <a class="afacebook" href="#">Facebook</a>
         <a class="ainstagram" href="https://www.instagram.com/kiyasuka/">Instagram</a>
       </div>
     </div>
-    <script type="text/javascript">
-    let btn = document.getElementById('btn');
-    let hiddendiv = document.getElementById('hiddendiv');
+    <script>
+      const moreLinks = document.querySelectorAll('.btn');
 
-    btn.onclick = function () {
-      if (hiddendiv.style.display === 'none') {
-        hiddendiv.style.display = 'inline-block';
-      } else {
-        hiddendiv.style.display = 'none';
-      }
-    }
+      moreLinks.forEach((link, i) => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const textBlock = document.getElementById(link.dataset.hiddendiv);
+
+          if (textBlock.style.display === 'none') {
+            textBlock.style.display = 'block';
+          } else {
+            textBlock.style.display = 'none';
+          }
+      });
+    });
+
+
+
+
+      // let btn = document.getElementById('btn');
+      // let hiddendiv = document.getElementById('hiddendiv');
+      //
+      // btn.onclick = function () {
+      //   if (hiddendiv.style.display === 'none') {
+      //     hiddendiv.style.display = 'inline-block';
+      //   } else {
+      //     hiddendiv.style.display = 'none';
+      //   }
+      // }
+
+
+
     </script>
   </body>
 </html>
